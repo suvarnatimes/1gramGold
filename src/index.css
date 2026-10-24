@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-emerald-deep: #064E3B;
+    --color-gold-antique: #D4AF37;
+    --color-gold-light: #F7E7A9;
+    --color-gold-dark: #A27F19;
+    --color-rich-black: #0F172A;
+    --color-pearl-white: #FDFBF7;
+  }
+
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shimmer-btn {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF3B0 50%, #D4AF37 100%);
+  background-size: 200% 100%;
+  transition: all 0.4s ease;
+}
+
+.gold-shimmer-btn:hover {
+  background-position: right center;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+}
+
+.gold-foil-text {
+  background: linear-gradient(135deg, #FFE27D 0%, #D4AF37 50%, #99781B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #D4AF37, #FFF3B0, #D4AF37) 1;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #064E3B;
+}

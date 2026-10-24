@@ -1,0 +1,7 @@
+{
+  "name": "Sudheer KT One Gram Gold",
+  "description": "Premier 1-gram micro gold-plated bridal & temple jewellery manufacturer from Chilakalapudi, Machilipatnam. Wholesale and retail portal.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
